@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Fitness</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg6.jpg');
+        background-repeat: no-repeat;
+       
+        color: white;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+
+    /*css for logo */
+    .left {
+       /* border: 2px solid rgb(32, 200, 23);*/
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 134px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 26px;
+    }
+
+    /*css for navbar */
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+       /* border: 2px solid rgb(238, 79, 79);*/
+
+    }
+
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 0px;
+        margin: -18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    /*css for buttons */
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+       /* border: 2px solid rgb(222, 239, 73);*/
+        display: inline-block;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 5px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(136, 134, 134);
+    }
+
+    .container {
+        margin: 106px 0px;
+        padding: 45px;
+        width: 36%;
+    }
+
+    .form-group input {
+
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        display: block;
+        font-size: 17px;
+        width: 267px;
+        padding: 9px;
+        border: 1px solid black;
+        margin: 11px auto;
+        border-radius: 14px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 30%;
+        margin: auto;
+        background:rgb(6, 22, 6) ;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo1.png" alt="Fitness Logo">
+            <div>Ajay Fitness</div>
+        </div>
+        <!-- mid box for nevbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calcultor</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in pune now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Contact Number">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
